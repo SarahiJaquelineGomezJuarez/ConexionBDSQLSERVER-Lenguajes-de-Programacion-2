@@ -87,7 +87,7 @@ int main() {
                 SQLGetData(hStmt, 8, SQL_C_WCHAR, ID_PUESTO, sizeof(ID_PUESTO), NULL);
                 SQLGetData(hStmt, 9, SQL_C_WCHAR, DESCRIPCION_DEL_PUESTO, sizeof(DESCRIPCION_DEL_PUESTO), NULL);
                 SQLGetData(hStmt, 10, SQL_C_WCHAR, DIRECTIVO, sizeof(DIRECTIVO), NULL); // Cambio para mostrar BIT como CHAR
-
+                // Mostrar los datos en formato tabular 
                 wcout << L"| " << left << setw(11) << ID_NUMERO_DE_EMPLEADO
                     << L"| " << left << setw(9) << NOMBRE_EMPLEADO
                     << L"| " << left << setw(16) << APELLIDO_PATERNO_EMPLEADO
